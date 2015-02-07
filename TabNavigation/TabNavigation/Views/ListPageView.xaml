@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabNavigation.Views.ListPageView">
+  <StackLayout>
+    <Label Text="A ListView with items here. Click the item to navigate to details" VerticalOptions="Center" HorizontalOptions="Center" />
+    <TableView>
+      <TableView.Root>
+        <TableSection Title="Menu">
+          <TextCell x:Name="txtclNavigateDetail" Text="Go to details of this item" />
+        </TableSection>
+      </TableView.Root>
+      <TableSection Title="More">
+        <TextCell Text="Demo" />
+      </TableSection>
+    </TableView>
+  </StackLayout>
+</ContentPage>
